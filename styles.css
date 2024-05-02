@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --background: #11111b;
-    --sublayer0: #161622;
-    --form-color: #181825;
+    --background: #1C1C1C;
+    --sublayer0: rgb(38, 38, 53);
+    --form-color: #1C1C1C;
     --text: #cdd6f4;
     --text-disabled: #80869b;
-    --accent-1: #7494ec;
+    --accent-1: #48DBB1;
     --accent-2: #f38ba8;
     --accent-3: #6c42cf;
-    --saturated-accents: #42467a;
+    --saturated-accents: #67ac98;
     --shadow: #000000;
 
     --large-font-size: 2.3rem;
@@ -20,7 +20,7 @@
 
 * {
     color: var(--text);
-    font-family: 'Inter', 'sans-sherif';
+    font-family: 'Inter', 'sans-serif';
     transition: 200ms ease;
 }
 
@@ -301,4 +301,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+@media screen and (max-width: 1200px) {
+    :root {
+        --large-font-size: 2.1rem;
+        --medium-font-size: 1.68rem;
+        --regular-font-size: 1.03rem;
+        --small-font-size: 1.1rem;
+    }
+    .form-box {
+        width: 85%;
+        height: 95%;
+    }
+    .input-row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --large-font-size: 1.9rem;
+        --medium-font-size: 1.48rem;
+        --regular-font-size: 0.83rem;
+        --small-font-size: 0.9rem;
+    }
+    .form-box {
+        width: 90%;
+        height: 100%;
+    }
+    .input-row {
+        flex-direction: column;
+    }
 }
