@@ -78,7 +78,7 @@ body {
     /*border: solid 2px var(--accent-2);*/
     border-radius: 0.6rem;
 
-    box-shadow: 10px -10px 50px var(--shadow);
+    /*box-shadow: 10px -10px 50px var(--shadow);*/
     transition: 200ms ease;
 }
 
