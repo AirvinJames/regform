@@ -78,7 +78,7 @@ body {
     /*border: solid 2px var(--accent-2);*/
     border-radius: 0.6rem;
 
-    box-shadow: 10px -10px 500px var(--shadow);
+    box-shadow: 10px -10px 50px var(--shadow);
     transition: 200ms ease;
 }
 
@@ -311,14 +311,14 @@ input:checked + .slider:before {
     }
     .form-box {
         width: 85%;
-        height: 95%;
+        height: 90%;
     }
     .input-row {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     :root {
         --large-font-size: 1.9rem;
         --medium-font-size: 1.48rem;
