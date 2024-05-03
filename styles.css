@@ -2,7 +2,7 @@
 
 :root {
     --background: #1C1C1C;
-    --sublayer0: rgb(38, 38, 53);
+    --sublayer0: rgb(38, 48, 53);
     --form-color: #1C1C1C;
     --text: #cdd6f4;
     --text-disabled: #80869b;
@@ -69,11 +69,12 @@ body {
     height: 82%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    width: 48%;
-    background-color: var(--sublayer0);
+    width: 100%;
+    /*background-color: var(--sublayer0);*/
 
     /*border: solid 2px var(--accent-2);*/
     border-radius: 0.6rem;
@@ -106,6 +107,7 @@ h1 {
     margin-top: 0.2rem;
     padding-top: 0;
     margin-bottom: 0.3rem;
+
 }
 
 .icon svg {
@@ -161,11 +163,11 @@ h3 {
     padding: 0.3rem;
     padding-left: 1rem;
     min-height: 2.2rem;
-    background-color: var(--background);
+    background-color: var(--sublayer0);
     border-radius: 12px;
     width: 100%;    
     max-width: 100%;
-    border: 2px solid var(--background) ;
+    border: 2px solid var(--bckground) ;
 
     transition: border 200ms ease-in;
 }
